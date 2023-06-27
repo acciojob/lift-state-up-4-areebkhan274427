@@ -26,7 +26,7 @@ function Parent() {
       <label>Item Price</label>
       <input
         onChange={(e) => setPrice(e.target.value)}
-        type="text"
+        type="number"
         id="itemPrice"
       />
       <button onClick={addData}>Add Item</button>

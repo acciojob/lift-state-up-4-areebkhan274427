@@ -9,13 +9,15 @@ function Child({ data, changeData }) {
   return (
     <div className="child">
       <h2>Child Component</h2>
-     
+      <ul>
+      <li></li>
         {
+            
             data.map((element,index)=>(
                 <li key={index}>{element.name} - ${element.price} <button onClick={()=>deleteItem(index)}>Remove</button></li>
             ))
         }
-      
+      </ul>
     </div>
   );
 }

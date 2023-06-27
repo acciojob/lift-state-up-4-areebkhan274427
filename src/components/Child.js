@@ -10,7 +10,7 @@ function Child({ data, changeData }) {
     <div className="child">
       <h2>Child Component</h2>
       <ul>
-      <li></li>
+      <li><button onClick={()=>deleteItem(index)}>Remove</button></li>
         {
             
             data.map((element,index)=>(
